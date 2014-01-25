@@ -23,6 +23,7 @@
 		83E6426F1893949800361DAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E6424A1893949700361DAF /* Foundation.framework */; };
 		83E642771893949800361DAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83E642751893949800361DAF /* InfoPlist.strings */; };
 		83E6427A1893949800361DAF /* IS_prac19Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E642791893949800361DAF /* IS_prac19Tests.m */; };
+		83E642881893AC1700361DAF /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E642871893AC1700361DAF /* webViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		83E642761893949800361DAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83E642781893949800361DAF /* IS_prac19Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IS_prac19Tests.h; sourceTree = "<group>"; };
 		83E642791893949800361DAF /* IS_prac19Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IS_prac19Tests.m; sourceTree = "<group>"; };
+		83E642861893AC1700361DAF /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = webViewController.h; path = ../webViewController.h; sourceTree = "<group>"; };
+		83E642871893AC1700361DAF /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = webViewController.m; path = ../webViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		83E6424E1893949800361DAF /* IS-prac19 */ = {
 			isa = PBXGroup;
 			children = (
+				83E642861893AC1700361DAF /* webViewController.h */,
+				83E642871893AC1700361DAF /* webViewController.m */,
 				83E642571893949800361DAF /* AppDelegate.h */,
 				83E642581893949800361DAF /* AppDelegate.m */,
 				83E642601893949800361DAF /* MainStoryboard.storyboard */,
@@ -273,6 +278,7 @@
 				83E642551893949800361DAF /* main.m in Sources */,
 				83E642591893949800361DAF /* AppDelegate.m in Sources */,
 				83E642651893949800361DAF /* ViewController.m in Sources */,
+				83E642881893AC1700361DAF /* webViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
