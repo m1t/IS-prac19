@@ -97,6 +97,30 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="IS塾" id="opy-Hl-1PB">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="m7I-cW-v4G" style="IBUITableViewCellStyleDefault" id="Pod-oZ-ftb">
+                                        <rect key="frame" x="0.0" y="242" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="IS塾webサイト" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m7I-cW-v4G">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="tU9-k9-EGY" kind="push" id="DKl-18-2Zw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                     </tableView>
                     <navigationItem key="navigationItem" title="演習１９" id="kFe-vi-HIm"/>
@@ -104,6 +128,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kS-gb-7Sj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1092" y="92"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="sX6-ok-Dwv">
+            <objects>
+                <viewController id="tU9-k9-EGY" customClass="ISWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sEe-gY-Pv0">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tV4-4H-78b">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0id-Bd-Ztm">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwF-dp-ZQ1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="P5c-DW-olH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="開く">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openURL:" destination="tU9-k9-EGY" eventType="touchUpInside" id="rfQ-Bt-10W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tV4-4H-78b" firstAttribute="top" secondItem="KwF-dp-ZQ1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="C0D-Gh-yS9"/>
+                            <constraint firstItem="tV4-4H-78b" firstAttribute="leading" secondItem="sEe-gY-Pv0" secondAttribute="leading" type="default" id="Dtc-oz-Uk8"/>
+                            <constraint firstItem="tV4-4H-78b" firstAttribute="bottom" secondItem="sEe-gY-Pv0" secondAttribute="bottom" type="default" id="KOU-VL-7yB"/>
+                            <constraint firstItem="tV4-4H-78b" firstAttribute="trailing" secondItem="sEe-gY-Pv0" secondAttribute="trailing" type="default" id="Qbe-rG-t74"/>
+                            <constraint firstItem="0id-Bd-Ztm" firstAttribute="leading" secondItem="sEe-gY-Pv0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Z9U-E7-hH8"/>
+                            <constraint firstItem="0id-Bd-Ztm" firstAttribute="top" secondItem="sEe-gY-Pv0" secondAttribute="top" constant="20" symbolic="YES" type="default" id="ofr-Ok-I7l"/>
+                            <constraint firstAttribute="trailing" secondItem="KwF-dp-ZQ1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sZV-xW-NSd"/>
+                            <constraint firstItem="KwF-dp-ZQ1" firstAttribute="leading" secondItem="0id-Bd-Ztm" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="vyR-bl-PaE"/>
+                            <constraint firstItem="KwF-dp-ZQ1" firstAttribute="baseline" secondItem="0id-Bd-Ztm" secondAttribute="baseline" type="default" id="yhQ-W5-MeX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ljd-es-4sn"/>
+                    <connections>
+                        <outlet property="urlText" destination="0id-Bd-Ztm" id="Dkf-jw-k6F"/>
+                        <outlet property="webView" destination="tV4-4H-78b" id="DQs-Sd-Joa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U04-kD-kuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1092" y="744"/>
         </scene>
         <!--Web View Controller - Map-->
         <scene sceneID="0Gb-Uy-0g0">
@@ -180,6 +259,14 @@
         </scene>
     </scenes>
     <classes>
+        <class className="ISWebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ISWebViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="openURL:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="urlText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>

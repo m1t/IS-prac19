@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83879377189CBEBC00E7BA7C /* ISWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83879376189CBEBC00E7BA7C /* ISWebViewController.m */; };
 		83E642491893949700361DAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E642481893949700361DAF /* UIKit.framework */; };
 		83E6424B1893949700361DAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E6424A1893949700361DAF /* Foundation.framework */; };
 		83E6424D1893949700361DAF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E6424C1893949700361DAF /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83879375189CBEBC00E7BA7C /* ISWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISWebViewController.h; sourceTree = "<group>"; };
+		83879376189CBEBC00E7BA7C /* ISWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISWebViewController.m; sourceTree = "<group>"; };
 		83E642451893949700361DAF /* IS-prac19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IS-prac19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E642481893949700361DAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		83E6424A1893949700361DAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,13 +123,15 @@
 		83E6424E1893949800361DAF /* IS-prac19 */ = {
 			isa = PBXGroup;
 			children = (
-				83E642861893AC1700361DAF /* webViewController.h */,
-				83E642871893AC1700361DAF /* webViewController.m */,
 				83E642571893949800361DAF /* AppDelegate.h */,
 				83E642581893949800361DAF /* AppDelegate.m */,
 				83E642601893949800361DAF /* MainStoryboard.storyboard */,
 				83E642631893949800361DAF /* ViewController.h */,
 				83E642641893949800361DAF /* ViewController.m */,
+				83E642861893AC1700361DAF /* webViewController.h */,
+				83E642871893AC1700361DAF /* webViewController.m */,
+				83879375189CBEBC00E7BA7C /* ISWebViewController.h */,
+				83879376189CBEBC00E7BA7C /* ISWebViewController.m */,
 				83E6424F1893949800361DAF /* Supporting Files */,
 			);
 			path = "IS-prac19";
@@ -279,6 +284,7 @@
 				83E642591893949800361DAF /* AppDelegate.m in Sources */,
 				83E642651893949800361DAF /* ViewController.m in Sources */,
 				83E642881893AC1700361DAF /* webViewController.m in Sources */,
+				83879377189CBEBC00E7BA7C /* ISWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +465,7 @@
 				83E6427F1893949800361DAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83E642801893949800361DAF /* Build configuration list for PBXNativeTarget "IS-prac19Tests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +474,7 @@
 				83E642821893949800361DAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
